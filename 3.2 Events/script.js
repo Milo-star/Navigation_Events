@@ -16,10 +16,15 @@ const clickOnSquare = (e) => {
     section.appendChild(div);
 }
 
-
-
-
 const actionSquares = document.querySelectorAll('.actionsquare')
 for (let actionSquare of actionSquares) {
   actionSquare.addEventListener('click', clickOnSquare)
+}
+
+function logs (color){
+  let ul = document.querySelector('ul');
+  let li = document.createElement('li');
+  ul.appendChild(li);
+  let txt = document.createTextNode("[" + getElapsedTime() + "]" + "Create a new" + color);
+  li.appendChild(txt);
 }
