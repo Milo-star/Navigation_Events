@@ -2,6 +2,7 @@
 body{
     margin: auto;
     transition: .3s;
+    text-align: center;
   }
   
   .actionsquare, .displayedsquare{
@@ -16,15 +17,15 @@ body{
   }
   
   .green{
-    background-color: lime;
+    background-color: green;
   }
   
   .violet{
-    background-color: magenta;
+    background-color: rgb(216, 208, 208);
   }
   
   .orange{
-    background-color: orange;
+    background-color: red;
   }
   
   .actionsquare-wrapper, .displayedsquare-wrapper{
@@ -35,4 +36,9 @@ body{
   main{
     max-width: 1000px;
     margin: 100px auto;
+  }
+
+  h2{
+    border-bottom: 2px solid black;
+    max-width: 180px;
   }
